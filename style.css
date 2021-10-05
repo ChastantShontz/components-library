@@ -2,3 +2,20 @@ hr {
   height: 0;
   border: .025em solid var(--black);
 }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#navigation {
+}
+
+#buttons {
+}
+
+#typography {
+}
+
+#mediacards {
+}
