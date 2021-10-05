@@ -1,0 +1,4 @@
+hr {
+  height: 0;
+  border: .025em solid var(--black);
+}
