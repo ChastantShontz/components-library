@@ -9,6 +9,7 @@ hr {
 }
 
 #navigation {
+  flex-direction: column;
 }
 
 #buttons {
@@ -18,4 +19,30 @@ hr {
 }
 
 #mediacards {
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border: .2em solid var(--blue);
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.navitem {
+  flex-grow: 1;
+  background-color: var(--blue);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1em;
+  margin: .1em;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navitem:hover {
+  transform: scaleY(1.25);
+  transition: all .25s ease;
+  background-color: var(--lightblue);
 }
