@@ -141,7 +141,7 @@ hr {
   background-color: var(--lightblue);
 }
 
-.button2border {
+.button2 {
   border-radius: 50%;
   box-sizing: border-box;
   height: 2.25em;
@@ -153,21 +153,36 @@ hr {
   border: .25em solid var(--blue);
 }
 
-.button2border:hover {
+.button2:hover {
   border: .25em solid var(--lightblue);
 }
 
-.button2border:hover .button2 {
+.button2:hover .play {
   background-color: var(--lightblue);
 }
 
-.button2 {
+.button2:hover .pause {
+  border-left: 1.2em double var(--lightblue);
+}
+
+.play {
   vertical-align: top;
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
   background-color: var(--blue);
   height: 1.5em;
   width: 1.5em;
   border: none;
+}
+
+.pause {
+  vertical-align: top;
+  background-color: transparent;
+  box-sizing: border-box;
+  height: 1.5em;
+  border-left: 1.2em double var(--blue);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
 }
 
 :root {
