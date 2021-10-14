@@ -57,7 +57,7 @@ hr {
 }
 
 .menulabel {
-  margin-top: .45em;
+  margin-top: .5em;
   margin-bottom: .45em;
   font-size: 1.5em;
   color: var(--white);
@@ -82,16 +82,18 @@ hr {
   position: relative;
   left: .2em;
   background-color: var(--blue);
-  width: 8em;
+  width: 5em;
   padding: 1em;
   border: none;
+  margin: 0;
   color: var(--white);
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .dropdownbutton:hover {
   background-color: var(--lightblue);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .dropdownlist {
@@ -99,7 +101,7 @@ hr {
   z-index: 1;
   position: absolute;
   box-shadow: .25em .5em 2em 0em rgba(0, 0, 0, .25);
-  background-color: #eeeeee;
+  background-color: var(--darkwhite);
   width: 6em;
   border-left: .1em solid var(--blue);
   border-right: .1em solid var(--blue);
@@ -117,15 +119,29 @@ hr {
   text-decoration: none;
 }
 
+.option:hover {
+  background-color: var(--hovergray);
+  font-weight: bold;
+}
+
 #topoption {
   border-top: 0;
 }
 
-.option:hover {
-  background-color: #bbbbbb;
-  font-weight: bold;
+.button1 {
+  border-radius: 5px;
+  background-color: var(--blue);
+  padding: .5em;
+  border: .2em solid var(--blue);
+  color: var(--white);
+}
+
+.button1:hover {
+  background-color: var(--lightblue);
 }
 
 :root {
   --lightblue: #7ba1ed;
+  --hovergray: #bbbbbb;
+  --darkwhite: #eeeeee;
 }
