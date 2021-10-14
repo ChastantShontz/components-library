@@ -1,11 +1,8 @@
 .background {
+  border-radius: 25px;
   border: .1em solid var(--black);
   margin-left: 10%;
   margin-right: 10%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
 }
 
 :root {
@@ -13,7 +10,6 @@ h1, h2, h3, h4, h5, h6 {
   --orange: #fa9600;
   --yellow: #fcdf21;
   --green: #2da154;
-  --lightblue: #7ba1ed;
   --blue: #3561BB;
   --purple: #9a3cc9;
   --black: black;
