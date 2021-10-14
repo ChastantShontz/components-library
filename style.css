@@ -131,6 +131,7 @@ hr {
 .button1 {
   border-radius: 5px;
   background-color: var(--blue);
+  height: 3em;
   padding: .5em;
   border: .2em solid var(--blue);
   color: var(--white);
@@ -138,6 +139,35 @@ hr {
 
 .button1:hover {
   background-color: var(--lightblue);
+}
+
+.button2border {
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 2.25em;
+  width: 2.25em;
+  padding-left: .4em;
+  padding-right: .25em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  border: .25em solid var(--blue);
+}
+
+.button2border:hover {
+  border: .25em solid var(--lightblue);
+}
+
+.button2border:hover .button2 {
+  background-color: var(--lightblue);
+}
+
+.button2 {
+  vertical-align: top;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  background-color: var(--blue);
+  height: 1.5em;
+  width: 1.5em;
+  border: none;
 }
 
 :root {
