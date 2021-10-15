@@ -43,9 +43,9 @@ hr {
 }
 
 .navitem:hover {
+  background-color: var(--lightblue);
   transform: scaleY(1.25);
   transition: all .25s ease;
-  background-color: var(--lightblue);
 }
 
 .nav2 {
@@ -80,7 +80,7 @@ hr {
 
 .dropdownbutton {
   position: relative;
-  left: .2em;
+  left: .19em;
   background-color: var(--blue);
   width: 5em;
   padding: 1em;
@@ -139,6 +139,7 @@ hr {
 
 .button1:hover {
   background-color: var(--lightblue);
+  cursor: pointer;
 }
 
 .button2 {
@@ -155,14 +156,17 @@ hr {
 
 .button2:hover {
   border: .25em solid var(--lightblue);
+  cursor: pointer;
 }
 
 .button2:hover .play {
   background-color: var(--lightblue);
+  cursor: pointer;
 }
 
 .button2:hover .pause {
-  border-left: 1.2em double var(--lightblue);
+  border-left: 1.15em double var(--lightblue);
+  cursor: pointer;
 }
 
 .play {
@@ -179,10 +183,51 @@ hr {
   background-color: transparent;
   box-sizing: border-box;
   height: 1.5em;
-  border-left: 1.2em double var(--blue);
+  border-left: 1.15em double var(--blue);
   border-right: none;
   border-top: none;
   border-bottom: none;
+}
+
+.button3 {
+  height: 2em;
+  width: 3.75em;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  border-radius: 25px;
+  background-color: var(--lightblue);
+  height: 2em;
+  width: 3.75em;
+  transition: all .5s ease;
+}
+
+.slider:before {
+  position: absolute;
+  left: .25em;
+  top: .25em;
+  content: "";
+  border-radius: 50%;
+  background-color: var(--white);
+  height: 1.5em;
+  width: 1.5em;
+  transition: all .5s ease;
+}
+
+.checkbox:checked + .slider {
+  background-color: var(--blue);
+  transition: all .5s ease;
+}
+
+.checkbox:checked + .slider:before {
+  transform: translateX(1.75em);
+  transition: all .5s ease;
 }
 
 :root {
