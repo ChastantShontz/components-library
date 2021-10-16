@@ -79,42 +79,33 @@ hr {
 }
 
 .dropdownbutton {
-  position: relative;
-  left: .19em;
   background-color: var(--blue);
   width: 5em;
   padding: 1em;
-  border: none;
+  border-left: .2em solid var(--blue);
   margin: 0;
   color: var(--white);
   font-size: 1.1em;
 }
 
 .dropdownbutton:hover {
-  background-color: var(--lightblue);
-  font-weight: bold;
   cursor: pointer;
 }
 
 .dropdownlist {
   display: none;
-  z-index: 1;
   position: absolute;
-  box-shadow: .25em .5em 2em 0em rgba(0, 0, 0, .25);
+  box-shadow: .25em .5em 2em 0 rgba(0, 0, 0, .25);
   background-color: var(--darkwhite);
   width: 6em;
-  border-left: .1em solid var(--blue);
-  border-right: .1em solid var(--blue);
-  border-bottom: .1em solid var(--blue);
 }
 
 .option {
   display: block;
-  padding-left: 1.2em;
+  padding-left: 1.25em;
   padding-right: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
-  border: .1em solid var(--blue);
   color: var(--blue);
   text-decoration: none;
 }
@@ -125,12 +116,29 @@ hr {
 }
 
 #topoption {
-  border-top: 0;
+  border-left: .2em solid var(--blue);
+  border-right: .2em solid var(--blue);
+  border-bottom: .1em solid var(--blue);
+}
+
+#midoption {
+  border-left: .2em solid var(--blue);
+  border-right: .2em solid var(--blue);
+  border-top: .1em solid var(--blue);
+  border-bottom: .1em solid var(--blue);
+}
+
+#bottomoption {
+  border-left: .2em solid var(--blue);
+  border-right: .2em solid var(--blue);
+  border-top: .1em solid var(--blue);
+  border-bottom: .2em solid var(--blue);
 }
 
 .button1 {
   border-radius: 5px;
   background-color: var(--blue);
+  box-sizing: border-box;
   height: 3em;
   padding: .5em;
   border: .2em solid var(--blue);
@@ -159,17 +167,17 @@ hr {
   cursor: pointer;
 }
 
-.button2:hover .play {
+.button2:hover #play {
   background-color: var(--lightblue);
   cursor: pointer;
 }
 
-.button2:hover .pause {
+.button2:hover #pause {
   border-left: 1.15em double var(--lightblue);
   cursor: pointer;
 }
 
-.play {
+#play {
   vertical-align: top;
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
   background-color: var(--blue);
@@ -178,10 +186,9 @@ hr {
   border: none;
 }
 
-.pause {
+#pause {
   vertical-align: top;
   background-color: transparent;
-  box-sizing: border-box;
   height: 1.5em;
   border-left: 1.15em double var(--blue);
   border-right: none;
@@ -192,16 +199,29 @@ hr {
 .button3 {
   height: 2em;
   width: 3.75em;
+}
+
+.button3:hover {
   cursor: pointer;
 }
 
-.checkbox {
+#checkbox {
   display: none;
+}
+
+#checkbox:checked ~ .slider {
+  background-color: var(--blue);
+  transition: all .5s ease;
+}
+
+#checkbox:checked ~ .slider:before {
+  transform: translateX(1.75em);
+  transition: all .5s ease;
 }
 
 .slider {
   position: absolute;
-  border-radius: 25px;
+  border-radius: 50px;
   background-color: var(--lightblue);
   height: 2em;
   width: 3.75em;
@@ -220,14 +240,38 @@ hr {
   transition: all .5s ease;
 }
 
-.checkbox:checked + .slider {
-  background-color: var(--blue);
-  transition: all .5s ease;
+.button4 {
+  border-radius: 7px;
+  height: 2.78em;
+  width: 4.49em;
 }
 
-.checkbox:checked + .slider:before {
-  transform: translateX(1.75em);
-  transition: all .5s ease;
+.button4:hover {
+  cursor: pointer;
+}
+
+.button4:active #box {
+  box-shadow: 0 0 .5em .2em rgba(123, 161, 237, .5),
+              .25em .25em .5em .25em rgba(123, 161, 237, .5);
+  transform: scale(.95) translateX(.1em) translateY(.2em);
+}
+
+#box {
+  position: relative;
+  left: .1em;
+  top: .1em;
+  border-radius: 5px;
+  box-shadow: 0 0 .5em .1em var(--lightblue),
+              .25em .25em .5em 0 var(--lightblue);
+  background-color: var(--blue);
+  height: 3em;
+  padding: .5em;
+  border: none;
+  color: var(--white);
+}
+
+#box {
+  cursor: pointer;
 }
 
 :root {
