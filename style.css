@@ -274,6 +274,22 @@ hr {
   cursor: pointer;
 }
 
+.typ1 {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.typ2 {
+}
+
+.typ3 {
+}
+
+.typ4 {
+}
+
 :root {
   --lightblue: #7ba1ed;
   --hovergray: #bbbbbb;
