@@ -317,8 +317,28 @@ hr {
 }
 
 .typ3 {
+  color: var(--darkwhite);
   font-size: 2em;
   font-weight: bold;
+  animation: flicker 2s ease infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 23%, 27%, 40%, 44%, 47%, 51%, 59%, 63%, 96%, 100% {
+    text-shadow: 0 0 .01em var(--white),
+                 0 0 .05em var(--white),
+                 0 0 .1em var(--white),
+                 0 0 .1em var(--blue),
+                 0 0 .2em var(--blue),
+                 0 0 .3em var(--blue),
+                 0 0 .4em var(--blue),
+                 0 0 .5em var(--blue),
+                 0 0 1em var(--blue),
+                 0 0 5em var(--blue);
+  }
+  25%, 42%, 49%, 61%, 98% {
+      text-shadow: 0 0 .01em var(--blue);
+  }
 }
 
 .typ4 {
