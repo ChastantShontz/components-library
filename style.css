@@ -408,7 +408,15 @@ hr {
   margin: 2%;
 }
 
+.forcentering {
+  position: absolute;
+  border-radius: .5em;
+  height: 20em;
+  width: 10em;
+}
+
 .media1title {
+  margin-top: .5em;
   margin-bottom: 0;
   color: var(--darkwhite);
   font-weight: bold;
@@ -442,11 +450,56 @@ hr {
 }
 
 .media1text {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 0;
 }
 
 .media1button {
+  position: absolute;
+  top: 17em;
+  left: 3.125em;
+  height: 2em;
+  width: 3.75em;
+}
+
+.media1button:hover {
+  cursor: pointer;
+}
+
+#media1checkbox {
+  display: none;
+}
+
+#media1checkbox:checked ~ .media1slider {
+  background-color: var(--blue);
+  transition: all .5s ease;
+}
+
+#media1checkbox:checked ~ .media1slider::before {
+  transform: translateX(1.75em);
+  transition: all .5s ease;
+}
+
+.media1slider {
+  position: absolute;
+  border-radius: 5em;
+  background-color: var(--lightblue);
+  height: 2em;
+  width: 3.75em;
+  transition: all .5s ease;
+}
+
+.media1slider::before {
+  content: "";
+  position: absolute;
+  left: .25em;
+  top: .25em;
+  border-radius: 50%;
+  background-color: var(--white);
+  height: 1.5em;
+  width: 1.5em;
+  transition: all .5s ease;
 }
 
 :root {
