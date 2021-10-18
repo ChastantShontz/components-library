@@ -409,6 +409,7 @@ hr {
 }
 
 .media1title {
+  margin-bottom: 0;
   color: var(--darkwhite);
   font-weight: bold;
   text-shadow: .01em .01em .01em var(--blue),
@@ -437,6 +438,7 @@ hr {
 }
 
 .media1img {
+  width: 100%;
 }
 
 .media1text {
