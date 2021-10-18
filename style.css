@@ -1,4 +1,4 @@
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -409,6 +409,31 @@ hr {
 }
 
 .media1title {
+  color: var(--darkwhite);
+  font-weight: bold;
+  text-shadow: .01em .01em .01em var(--blue),
+               .01em .015em .01em var(--blue),
+               .015em .02em .01em var(--blue),
+               .015em .025em .01em var(--blue),
+               .02em .03em .01em var(--blue),
+               .02em .035em .01em var(--blue),
+               .025em .04em .01em var(--blue),
+               .025em .045em .01em var(--blue),
+               .03em .05em .01em var(--blue),
+               .03em .055em .01em var(--blue),
+               .035em .06em .01em var(--blue),
+               .035em .065em .01em var(--blue),
+               .04em .07em .01em var(--blue),
+               .04em .075em .01em var(--blue),
+               .045em .08em .01em var(--blue),
+               .045em .085em .01em var(--blue),
+               .05em .09em .01em var(--blue),
+               .05em .095em .01em var(--blue),
+               .06em .1em .1em rgba(53, 97, 187, .5),
+               .07em .2em .2em rgba(53, 97, 187, .4),
+               .08em .3em .3em rgba(53, 97, 187, .3),
+               .09em .4em .4em rgba(53, 97, 187, .2),
+               .1em .5em .5em rgba(53, 97, 187, .1);
 }
 
 .media1img {
