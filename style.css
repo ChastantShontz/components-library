@@ -510,6 +510,11 @@ hr {
   margin: 2%;
 }
 
+.media2img {
+  float: left;
+  height: 75%;
+}
+
 :root {
   --lightblue: #7ba1ed;
   --bluegradientlight: hsl(220, 56%, 57%);
