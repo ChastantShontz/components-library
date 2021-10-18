@@ -16,15 +16,6 @@ hr {
   flex-direction: column;
 }
 
-#buttons {
-}
-
-#typography {
-}
-
-#mediacards {
-}
-
 .nav1 {
   display: flex;
   justify-content: space-around;
@@ -69,7 +60,7 @@ hr {
   width: 60%;
 }
 
-.dropdown:hover .dropdownbutton {
+.dropdown:hover .dropdowntext {
   background-color: var(--lightblue);
   font-weight: bold;
 }
@@ -78,7 +69,46 @@ hr {
   display: block;
 }
 
-.dropdownbutton {
+#dropdownbutton1 {
+  display: none;
+}
+
+#dropdownbutton1:checked ~ #dropdowntext1 {
+  background-color: var(--lightblue);
+  font-weight: bold;
+}
+
+#dropdownbutton1:checked ~ #dropdownlist1 {
+  display: block;
+}
+
+#dropdownbutton2 {
+  display: none;
+}
+
+#dropdownbutton2:checked ~ #dropdowntext2 {
+  background-color: var(--lightblue);
+  font-weight: bold;
+}
+
+#dropdownbutton2:checked ~ #dropdownlist2 {
+  display: block;
+}
+
+#dropdownbutton3 {
+  display: none;
+}
+
+#dropdownbutton3:checked ~ #dropdowntext3 {
+  background-color: var(--lightblue);
+  font-weight: bold;
+}
+
+#dropdownbutton3:checked ~ #dropdownlist3 {
+  display: block;
+}
+
+.dropdowntext {
   background-color: var(--blue);
   width: 5em;
   padding: 1em;
@@ -88,15 +118,16 @@ hr {
   font-size: 1.1em;
 }
 
-.dropdownbutton:hover {
+.dropdowntext:hover {
   cursor: pointer;
 }
 
 .dropdownlist {
+  z-index: 1;
   display: none;
   position: absolute;
   box-shadow: .25em .5em 2em 0 rgba(0, 0, 0, .25);
-  background-color: var(--darkwhite);
+  background-color: var(--white);
   width: 6em;
 }
 
@@ -136,16 +167,24 @@ hr {
 }
 
 .button1 {
+  background-color: var(--blue);
+  height: 4.2em;
+  width: 5.6em;
+}
+
+.nobackground {
+  position: relative;
+  left: 1em;
+  top: 1em;
   border-radius: .5em;
   background-color: var(--blue);
-  box-sizing: border-box;
   height: 3em;
   padding: .5em;
-  border: .2em solid var(--blue);
+  border: none;
   color: var(--white);
 }
 
-.button1:hover {
+.nobackground:hover {
   background-color: var(--lightblue);
   cursor: pointer;
 }
@@ -214,7 +253,7 @@ hr {
   transition: all .5s ease;
 }
 
-#checkbox:checked ~ .slider:before {
+#checkbox:checked ~ .slider::before {
   transform: translateX(1.75em);
   transition: all .5s ease;
 }
@@ -228,11 +267,11 @@ hr {
   transition: all .5s ease;
 }
 
-.slider:before {
+.slider::before {
+  content: "";
   position: absolute;
   left: .25em;
   top: .25em;
-  content: "";
   border-radius: 50%;
   background-color: var(--white);
   height: 1.5em;
@@ -263,14 +302,14 @@ hr {
   border-radius: .5em;
   box-shadow: 0 0 .5em .1em var(--lightblue),
               .25em .25em .5em 0 var(--lightblue);
-  background-color: var(--blue);
+  background: linear-gradient(to bottom right, var(--bluegradientlight), var(--bluegradientdark));
   height: 3em;
   padding: .5em;
   border: none;
   color: var(--white);
 }
 
-#box {
+#box:hover {
   cursor: pointer;
 }
 
@@ -304,16 +343,31 @@ hr {
 }
 
 .typ2 {
-  background: linear-gradient(120deg, var(--lightblue), var(--blue));
+  background: linear-gradient(var(--blue), var(--lightblue), var(--blue));
 }
 
 .text {
-  background: linear-gradient(240deg, var(--lightblue), var(--blue));
+  background: linear-gradient(to right, var(--blue), var(--lightblue), var(--darkwhite), var(--lightblue), var(--blue));
   background-clip: text;
+  background-repeat: no-repeat;
+  background-color: var(--blue);
+  background-size: 1em 100%;
+  width: 9.2em;
   color: transparent;
   font-size: 2em;
   font-weight: bold;
-  filter: drop-shadow(.01em .01em var(--white));
+  text-align: center;
+  filter: drop-shadow(0 0 .1em var(--white));
+  animation: shimmer 2s ease infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 .typ3 {
@@ -346,8 +400,30 @@ hr {
   font-weight: bold;
 }
 
+.media1 {
+  border-radius: .5em;
+  height: 20em;
+  width: 10em;
+  border: .1em solid var(--black);
+  margin: 2%;
+}
+
+.media1title {
+}
+
+.media1img {
+}
+
+.media1text {
+}
+
+.media1button {
+}
+
 :root {
   --lightblue: #7ba1ed;
+  --bluegradientlight: hsl(220, 56%, 57%);
+  --bluegradientdark: hsl(220, 56%, 37%);
   --hovergray: #bbbbbb;
   --darkwhite: #eeeeee;
 }

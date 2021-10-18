@@ -26,37 +26,42 @@
         <div class="nav2">
           <p class="menulabel"><b>Navigation Bar</b></p>
           <div class="menu">
-            <div class="dropdown">
-              <p class="dropdownbutton">Category 1</p>
-              <div class="dropdownlist">
+            <label for="dropdownbutton1" class="dropdown" id="dropdown1">
+              <input type="checkbox" class="dropdownbutton" id="dropdownbutton1">
+              <p class="dropdowntext" id="dropdowntext1">Category 1</p>
+              <div class="dropdownlist" id="dropdownlist1">
                 <a href="#" class="option" id="topoption">Item 1</a>
                 <a href="#" class="option" id="midoption">Item 2</a>
                 <a href="#" class="option" id="bottomoption">Item 3</a>
               </div>
-            </div>
-            <div class="dropdown">
-              <p class="dropdownbutton">Category 2</p>
-              <div class="dropdownlist">
+            </label>
+            <label for="dropdownbutton2" class="dropdown" id="dropdown2">
+              <input type="checkbox" class="dropdownbutton" id="dropdownbutton2">
+              <p class="dropdowntext" id="dropdowntext2">Category 2</p>
+              <div class="dropdownlist" id="dropdownlist2">
                 <a href="#" class="option" id="topoption">Item 1</a>
                 <a href="#" class="option" id="midoption">Item 2</a>
                 <a href="#" class="option" id="bottomoption">Item 3</a>
               </div>
-            </div>
-            <div class="dropdown">
-              <p class="dropdownbutton">Category 3</p>
-              <div class="dropdownlist">
+            </label>
+            <label for="dropdownbutton3" class="dropdown" id="dropdown3">
+              <input type="checkbox" class="dropdownbutton" id="dropdownbutton3">
+              <p class="dropdowntext" id="dropdowntext3">Category 3</p>
+              <div class="dropdownlist" id="dropdownlist3">
                 <a href="#" class="option" id="topoption">Item 1</a>
                 <a href="#" class="option" id="midoption">Item 2</a>
                 <a href="#" class="option" id="bottomoption">Item 3</a>
               </div>
-            </div>
+            </label>
           </div>
         </div>
       </div>
       <hr>
       <h2>Buttons</h2>
       <div class="container" id="buttons">
-        <button type="button" class="button1"><b>&#8592; Back</b></button>
+        <div class="button1">
+          <button type="button" class="nobackground"><b>&#8592; Back</b></button>
+        </div>
         <label for="play" class="button2">
           <button type="button" id="play"></button>
         </label>
@@ -65,7 +70,8 @@
         </label>
         <label for="checkbox" class="button3">
           <input type="checkbox" id="checkbox">
-          <span class="slider"></span>
+          <div class="slider">
+          </div>
         </label>
         <label for="box" class="button4">
           <button type="button" id="box"><b>SUBMIT</b></button>
@@ -76,7 +82,7 @@
       <div class="container" id="typography">
         <p class="typ1">Block text</p>
         <div class="typ2">
-          <p class="text">Colored text</p>
+          <p class="text">Shimmering text</p>
         </div>
         <p class="typ3">Neon text</p>
         <p class="typ4">Wrapped text</p>
@@ -84,6 +90,14 @@
       <hr>
       <h2>Media Cards</h2>
       <div class="container" id="mediacards">
+        <div class="media1">
+          <h3 class="media1title">Title</h3>
+          <div class="media1img">
+          </div>
+          <p class="media1text">Lorem ipsum</p>
+          <label class="media1button">
+          </label>
+        </div>
       </div>
     </div>
   </body>
