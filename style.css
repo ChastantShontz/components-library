@@ -502,6 +502,14 @@ hr {
   transition: all .5s ease;
 }
 
+.media2 {
+  border-radius: .5em;
+  height: 10em;
+  width: 20em;
+  border: .1em solid var(--black);
+  margin: 2%;
+}
+
 :root {
   --lightblue: #7ba1ed;
   --bluegradientlight: hsl(220, 56%, 57%);
