@@ -515,6 +515,29 @@ hr {
   height: 75%;
 }
 
+.media2title {
+  background: linear-gradient(to right, var(--blue), var(--lightblue), var(--darkwhite), var(--lightblue), var(--blue));
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-color: var(--blue);
+  background-size: 1em 100%;
+  width: 100%;
+  margin-top: .5em;
+  color: transparent;
+  font-weight: bold;
+  filter: drop-shadow(0 0 .1em var(--white));
+  animation: shimmer 5s ease infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 :root {
   --lightblue: #7ba1ed;
   --bluegradientlight: hsl(220, 56%, 57%);
