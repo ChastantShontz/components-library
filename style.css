@@ -402,11 +402,11 @@ hr {
 
 .media1 {
   border-radius: .5em;
-  background-color: var(--backgroundgreen);
+  background-color: rgba(45, 161, 84, .1);
   box-sizing: border-box;
   height: 20em;
   width: 10em;
-  border: .1em solid var(--green);
+  border: .1em solid var(--darkgreen);
   margin: 2%;
 }
 
@@ -420,7 +420,7 @@ hr {
 .media1title {
   margin-top: .5em;
   margin-bottom: 0;
-  color: var(--backgroundgreen);
+  color: var(--darkwhite);
   font-weight: bold;
   text-shadow: .01em .01em .01em var(--green),
                .01em .015em .01em var(--green),
@@ -455,7 +455,7 @@ hr {
   margin-left: 6%;
   margin-right: 6%;
   margin-top: 0;
-  color: var(--darkgreen);
+  color: var(--green);
 }
 
 .media1button {
@@ -499,7 +499,7 @@ hr {
   left: .25em;
   top: .25em;
   border-radius: 50%;
-  background-color: var(--backgroundgreen);
+  background-color: var(--lightyellow);
   height: 1.5em;
   width: 1.5em;
   transition: all .5s ease;
@@ -507,9 +507,10 @@ hr {
 
 .media2 {
   border-radius: .5em;
+  background-color: rgba(154, 60, 201, .1);
   height: 10em;
   width: 20em;
-  border: .1em solid var(--black);
+  border: .1em solid var(--darkpurple);
   margin: 2%;
 }
 
@@ -519,17 +520,16 @@ hr {
 }
 
 .media2title {
-  background: linear-gradient(to right, var(--blue), var(--lightblue), var(--darkwhite), var(--lightblue), var(--blue));
+  background: linear-gradient(to right, var(--darkred), var(--red), var(--darkwhite), var(--red), var(--darkred));
   background-clip: text;
   background-repeat: no-repeat;
-  background-color: var(--blue);
+  background-color: var(--darkred);
   background-size: 1em 100%;
   width: 100%;
   margin-top: .5em;
   margin-bottom: 0;
   color: transparent;
   font-weight: bold;
-  filter: drop-shadow(0 0 .1em var(--white));
   animation: shimmer 5s ease infinite;
 }
 
@@ -546,12 +546,13 @@ hr {
   margin-right: 2%;
   margin-top: 0;
   margin-bottom: 1.55em;
+  color: var(--darkred);
 }
 
 .media2buttons {
   border-bottom-left-radius: .4em;
   border-bottom-right-radius: .4em;
-  background-color: var(--blue);
+  background-color: var(--darkpurple);
   height: 3em;
   width: 100%;
 }
@@ -561,7 +562,7 @@ hr {
   left: 1em;
   top: .25em;
   border-radius: .5em;
-  background-color: var(--blue);
+  background-color: var(--darkpurple);
   height: 3em;
   padding: .5em;
   border: none;
@@ -569,7 +570,7 @@ hr {
 }
 
 .back:hover {
-  background-color: var(--lightblue);
+  background-color: var(--lightpurple);
   cursor: pointer;
 }
 
@@ -578,7 +579,7 @@ hr {
   left: 11.5em;
   top: .25em;
   border-radius: .5em;
-  background-color: var(--blue);
+  background-color: var(--darkpurple);
   height: 3em;
   padding: .5em;
   border: none;
@@ -586,17 +587,22 @@ hr {
 }
 
 .forward:hover {
-  background-color: var(--lightblue);
+  background-color: var(--lightpurple);
   cursor: pointer;
 }
 
 :root {
+  --lightred: #ff8585;
+  --darkred: #d91414;
+  --lightyellow: #fcff9e;
   --backgroundgreen: #f2fff3;
   --lightgreen: #92e084;
   --darkgreen: #197333;
   --lightblue: #7ba1ed;
   --bluegradientlight: hsl(220, 56%, 57%);
   --bluegradientdark: hsl(220, 56%, 37%);
+  --lightpurple: #cc98fa;
+  --darkpurple: #710299;
   --hovergray: #bbbbbb;
   --darkwhite: #eeeeee;
 }
