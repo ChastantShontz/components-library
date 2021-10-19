@@ -402,47 +402,49 @@ hr {
 
 .media1 {
   border-radius: .5em;
+  background-color: var(--backgroundgreen);
+  box-sizing: border-box;
   height: 20em;
   width: 10em;
-  border: .1em solid var(--black);
+  border: .1em solid var(--green);
   margin: 2%;
 }
 
 .forcentering {
   position: absolute;
   border-radius: .5em;
-  height: 20em;
-  width: 10em;
+  height: 19.8em;
+  width: 9.8em;
 }
 
 .media1title {
   margin-top: .5em;
   margin-bottom: 0;
-  color: var(--darkwhite);
+  color: var(--backgroundgreen);
   font-weight: bold;
-  text-shadow: .01em .01em .01em var(--blue),
-               .01em .015em .01em var(--blue),
-               .015em .02em .01em var(--blue),
-               .015em .025em .01em var(--blue),
-               .02em .03em .01em var(--blue),
-               .02em .035em .01em var(--blue),
-               .025em .04em .01em var(--blue),
-               .025em .045em .01em var(--blue),
-               .03em .05em .01em var(--blue),
-               .03em .055em .01em var(--blue),
-               .035em .06em .01em var(--blue),
-               .035em .065em .01em var(--blue),
-               .04em .07em .01em var(--blue),
-               .04em .075em .01em var(--blue),
-               .045em .08em .01em var(--blue),
-               .045em .085em .01em var(--blue),
-               .05em .09em .01em var(--blue),
-               .05em .095em .01em var(--blue),
-               .06em .1em .1em rgba(53, 97, 187, .5),
-               .07em .2em .2em rgba(53, 97, 187, .4),
-               .08em .3em .3em rgba(53, 97, 187, .3),
-               .09em .4em .4em rgba(53, 97, 187, .2),
-               .1em .5em .5em rgba(53, 97, 187, .1);
+  text-shadow: .01em .01em .01em var(--green),
+               .01em .015em .01em var(--green),
+               .015em .02em .01em var(--green),
+               .015em .025em .01em var(--green),
+               .02em .03em .01em var(--green),
+               .02em .035em .01em var(--green),
+               .025em .04em .01em var(--green),
+               .025em .045em .01em var(--green),
+               .03em .05em .01em var(--green),
+               .03em .055em .01em var(--green),
+               .035em .06em .01em var(--green),
+               .035em .065em .01em var(--green),
+               .04em .07em .01em var(--green),
+               .04em .075em .01em var(--green),
+               .045em .08em .01em var(--green),
+               .045em .085em .01em var(--green),
+               .05em .09em .01em var(--green),
+               .05em .095em .01em var(--green),
+               .06em .1em .1em rgba(45, 161, 84, .5),
+               .07em .2em .2em rgba(45, 161, 84, .4),
+               .08em .3em .3em rgba(45, 161, 84, .3),
+               .09em .4em .4em rgba(45, 161, 84, .2),
+               .1em .5em .5em rgba(45, 161, 84, .1);
 }
 
 .media1img {
@@ -453,6 +455,7 @@ hr {
   margin-left: 6%;
   margin-right: 6%;
   margin-top: 0;
+  color: var(--darkgreen);
 }
 
 .media1button {
@@ -472,7 +475,7 @@ hr {
 }
 
 #media1checkbox:checked ~ .media1slider {
-  background-color: var(--blue);
+  background-color: var(--green);
   transition: all .5s ease;
 }
 
@@ -484,7 +487,7 @@ hr {
 .media1slider {
   position: absolute;
   border-radius: 5em;
-  background-color: var(--lightblue);
+  background-color: var(--lightgreen);
   height: 2em;
   width: 3.75em;
   transition: all .5s ease;
@@ -496,7 +499,7 @@ hr {
   left: .25em;
   top: .25em;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: var(--backgroundgreen);
   height: 1.5em;
   width: 1.5em;
   transition: all .5s ease;
@@ -588,6 +591,9 @@ hr {
 }
 
 :root {
+  --backgroundgreen: #f2fff3;
+  --lightgreen: #92e084;
+  --darkgreen: #197333;
   --lightblue: #7ba1ed;
   --bluegradientlight: hsl(220, 56%, 57%);
   --bluegradientdark: hsl(220, 56%, 37%);
