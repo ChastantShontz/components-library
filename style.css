@@ -14,6 +14,11 @@ hr {
 
 #navigation {
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+#buttons {
+  font-family: "Roboto", sans-serif;
 }
 
 .nav1 {
@@ -314,6 +319,7 @@ hr {
 }
 
 .typ1 {
+  font-family: "Archivo Black", sans-serif;
   color: var(--darkwhite);
   font-size: 2em;
   font-weight: bold;
@@ -343,6 +349,7 @@ hr {
 }
 
 .typ2 {
+  font-family: "Anton", sans-serif;
   background: linear-gradient(var(--blue), var(--lightblue), var(--blue));
 }
 
@@ -371,6 +378,7 @@ hr {
 }
 
 .typ3 {
+  font-family: "Balsamiq Sans", sans-serif;
   color: var(--darkwhite);
   font-size: 2em;
   font-weight: bold;
@@ -420,6 +428,7 @@ hr {
 .media1title {
   margin-top: .5em;
   margin-bottom: 0;
+  font-family: "Archivo Black", sans-serif;
   color: var(--darkwhite);
   font-weight: bold;
   text-shadow: .01em .01em .01em var(--green),
@@ -456,6 +465,8 @@ hr {
   margin-right: 6%;
   margin-top: 0;
   color: var(--green);
+  font-family: "Merriweather", serif;
+  font-size: .85em;
 }
 
 .media1button {
@@ -528,6 +539,7 @@ hr {
   width: 100%;
   margin-top: .5em;
   margin-bottom: 0;
+  font-family: "Anton", sans-serif;
   color: transparent;
   font-weight: bold;
   animation: shimmer 5s ease infinite;
@@ -544,9 +556,10 @@ hr {
 
 .media2text {
   margin-right: 2%;
-  margin-top: 0;
-  margin-bottom: 1.55em;
+  margin-bottom: .8em;
+  font-family: "Merriweather", serif;
   color: var(--darkred);
+  font-size: .85em;
 }
 
 .media2buttons {
@@ -555,12 +568,13 @@ hr {
   background-color: var(--darkpurple);
   height: 3em;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 .back {
   position: relative;
   left: 1em;
-  top: .25em;
+  top: .35em;
   border-radius: .5em;
   background-color: var(--darkpurple);
   height: 3em;
@@ -577,7 +591,7 @@ hr {
 .forward {
   position: relative;
   left: 11.5em;
-  top: .25em;
+  top: .35em;
   border-radius: .5em;
   background-color: var(--darkpurple);
   height: 3em;
