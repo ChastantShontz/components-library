@@ -17,8 +17,8 @@ hr {
 }
 
 .nav1 {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   border: .2em solid var(--blue);
   margin: 2%;
 }
@@ -402,7 +402,7 @@ hr {
 
 .media1 {
   border-radius: .5em;
-  background-color: rgba(45, 161, 84, .1);
+  background-color: rgba(45, 161, 84, .05);
   box-sizing: border-box;
   height: 20em;
   width: 10em;
@@ -507,7 +507,7 @@ hr {
 
 .media2 {
   border-radius: .5em;
-  background-color: rgba(154, 60, 201, .1);
+  background-color: rgba(154, 60, 201, .05);
   height: 10em;
   width: 20em;
   border: .1em solid var(--darkpurple);
@@ -592,10 +592,8 @@ hr {
 }
 
 :root {
-  --lightred: #ff8585;
   --darkred: #d91414;
   --lightyellow: #fcff9e;
-  --backgroundgreen: #f2fff3;
   --lightgreen: #92e084;
   --darkgreen: #197333;
   --lightblue: #7ba1ed;
@@ -605,4 +603,23 @@ hr {
   --darkpurple: #710299;
   --hovergray: #bbbbbb;
   --darkwhite: #eeeeee;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+}
+
+@media screen and (min-width: 990px) and (max-width: 1279px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+  body {background-color: yellow;}
+  #typography {flex-direction: column; text-align: center;}
+  .typ2 {width: 100%;}
+  .text {width: 100%; text-align: center;}
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+}
+
+@media screen and (max-width: 549px) {
 }
