@@ -512,7 +512,7 @@ hr {
 
 .media2img {
   float: left;
-  height: 75%;
+  height: 70%;
 }
 
 .media2title {
@@ -523,6 +523,7 @@ hr {
   background-size: 1em 100%;
   width: 100%;
   margin-top: .5em;
+  margin-bottom: 0;
   color: transparent;
   font-weight: bold;
   filter: drop-shadow(0 0 .1em var(--white));
@@ -540,6 +541,50 @@ hr {
 
 .media2text {
   margin-right: 2%;
+  margin-top: 0;
+  margin-bottom: 1.55em;
+}
+
+.media2buttons {
+  border-bottom-left-radius: .4em;
+  border-bottom-right-radius: .4em;
+  background-color: var(--blue);
+  height: 3em;
+  width: 100%;
+}
+
+.back {
+  position: relative;
+  left: 1em;
+  top: .25em;
+  border-radius: .5em;
+  background-color: var(--blue);
+  height: 3em;
+  padding: .5em;
+  border: none;
+  color: var(--white);
+}
+
+.back:hover {
+  background-color: var(--lightblue);
+  cursor: pointer;
+}
+
+.forward {
+  position: relative;
+  left: 11.5em;
+  top: .25em;
+  border-radius: .5em;
+  background-color: var(--blue);
+  height: 3em;
+  padding: .5em;
+  border: none;
+  color: var(--white);
+}
+
+.forward:hover {
+  background-color: var(--lightblue);
+  cursor: pointer;
 }
 
 :root {
