@@ -615,6 +615,10 @@ hr {
 }
 
 @media screen and (min-width: 768px) and (max-width: 989px) {
+  body {background-color: yellow;}
+  #typography {flex-direction: column; text-align: center;}
+  .typ2 {width: 100%;}
+  .text {width: 100%; text-align: center;}
 }
 
 @media screen and (min-width: 550px) and (max-width: 767px) {
