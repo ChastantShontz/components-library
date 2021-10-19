@@ -538,6 +538,10 @@ hr {
   }
 }
 
+.media2text {
+  margin-right: 2%;
+}
+
 :root {
   --lightblue: #7ba1ed;
   --bluegradientlight: hsl(220, 56%, 57%);
