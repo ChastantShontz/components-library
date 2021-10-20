@@ -197,12 +197,8 @@ hr {
 .button2 {
   border-radius: 50%;
   box-sizing: border-box;
-  height: 2.25em;
-  width: 2.25em;
-  padding-left: .4em;
-  padding-right: .25em;
-  padding-top: .25em;
-  padding-bottom: .25em;
+  height: 2.5em;
+  width: 2.5em;
   border: .25em solid var(--blue);
 }
 
@@ -211,33 +207,35 @@ hr {
   cursor: pointer;
 }
 
-.button2:hover #play {
+.button2:hover .playpause {
   background-color: var(--lightblue);
+  border-color: var(--lightblue) !important;
   cursor: pointer;
 }
 
-.button2:hover #pause {
-  border-left: 1.15em double var(--lightblue);
-  cursor: pointer;
+#switch {
+  display: none;
 }
 
-#play {
-  vertical-align: top;
+#switch:checked ~ .playpause {
+  background-color: transparent;
+  clip-path: none;
+  height: 1.5em;
+  width: 0;
+  border-left: 1.15em double var(--blue);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.playpause {
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
   background-color: var(--blue);
   height: 1.5em;
   width: 1.5em;
   border: none;
-}
-
-#pause {
-  vertical-align: top;
-  background-color: transparent;
-  height: 1.5em;
-  border-left: 1.15em double var(--blue);
-  border-right: none;
-  border-top: none;
-  border-bottom: none;
+  margin-left: .45em;
+  margin-top: .25em;
 }
 
 .button3 {
