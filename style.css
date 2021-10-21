@@ -18,7 +18,12 @@ hr {
 }
 
 #buttons {
+  align-items: center;
   font-family: "Roboto", sans-serif;
+}
+
+#mediacards {
+  align-items: center;
 }
 
 .nav1 {
